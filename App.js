@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Search from './components/Search.js'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
+class App extends Component {
+  render(){
+    return (
+      <Search />
+    );
+  }
 }
 
 const styles = StyleSheet.create({
@@ -17,3 +18,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App
